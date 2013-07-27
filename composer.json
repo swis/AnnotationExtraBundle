@@ -1,7 +1,7 @@
 {
     "name": "swis/annotation-extra-bundle",
     "type": "symfony-bundle",
-    "description": "Symfony AnnotationExtraBundle",
+    "description": "This bundle adds security annotations to a Symfony2 project.",
     "keywords": ["security annotations"],
     "license": "MIT",
     "authors": [
