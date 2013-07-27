@@ -1,6 +1,6 @@
 <?php
 
-namespace Swis\Bundle\AnnotationsExtraBundle\Annotations;
+namespace Swis\Bundle\AnnotationExtraBundle\Annotations;
 
 /**
  * @Annotation

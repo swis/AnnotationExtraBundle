@@ -1,11 +1,11 @@
 <?php
 
-namespace Swis\Bundle\AnnotationsExtraBundle\Annotations\Driver;
+namespace Swis\Bundle\AnnotationExtraBundle\Annotations\Driver;
 
 use JMS\DiExtraBundle\Annotation as DI;
 use Symfony\Component\HttpKernel\Event\FilterControllerEvent;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
-use Swis\Bundle\AnnotationsExtraBundle\Annotations;
+use Swis\Bundle\AnnotationExtraBundle\Annotations;
 
 /**
  * @DI\Service
