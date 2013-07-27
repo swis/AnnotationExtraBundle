@@ -1,0 +1,39 @@
+{
+    "name": "swis/annotation-extra-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony AnnotationExtraBundle",
+    "keywords": ["security annotations"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sascha Weyers",
+            "email": "kontakt@sw-is.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4",
+        "symfony/framework-bundle": "~2.1",
+        "symfony/form": "~2.1",
+        "symfony/security-bundle": "~2.1"
+    },
+    "require-dev": {
+        "twig/twig": "~1.5",
+        "doctrine/doctrine-bundle": "*",
+        "swiftmailer/swiftmailer": ">=4.3, <6.0",
+        "willdurand/propel-typehintable-behavior": "dev-master",
+        "symfony/yaml": "~2.1",
+        "symfony/validator": "~2.1"
+    },
+    "suggest": {
+    },
+    "autoload": {
+        "psr-0": { "Swis\\Bundle\\AnnotationExtraBundle": "" }
+    },
+    "target-dir": "Swis/Bundle/AnnotationExtraBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
