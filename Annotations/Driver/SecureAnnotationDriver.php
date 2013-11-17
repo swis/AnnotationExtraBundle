@@ -46,7 +46,7 @@ class SecureAnnotationDriver
                 $accessGranted = false;
 
                 foreach ($configuration->roles as $role) {
-                    if ($this->securityContext->isGranted($role)) {
+                    if ($this->securityContext->getToken() != null && $this->securityContext->isGranted($role)) {
                         $accessGranted = true;
                         break;
                     }

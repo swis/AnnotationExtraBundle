@@ -45,7 +45,8 @@ class SecureParamAnnotationDriver
             if ($configuration instanceof Annotations\SecureParam) {
                 foreach ($configuration->permissions as $permission) {
                     $object = $event->getRequest()->attributes->get($configuration->name);
-                    if (!$this->securityContext->isGranted($permission, $object)) {
+                    $hasToken = $this->securityContext->getToken() != null;
+                    if (!$hasToken || !$this->securityContext->isGranted($permission, $object)) {
                         throw new AccessDeniedException();
                     }
                 }
